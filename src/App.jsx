@@ -1,20 +1,26 @@
-import { useState } from 'react'
-import './App.css'
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import './App.scss';
+import Header from './Components/Header/Header';
+import SearchBar from './Components/SearchBar/SearchBar';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
 
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-
-    </>
+    <Container fluid>
+      <Row >
+        <Col className="col-12 text-center header">
+          <Header />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="col-12 search-bar">
+          <SearchBar />
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

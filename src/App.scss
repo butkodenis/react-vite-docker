@@ -1,0 +1,28 @@
+h1 {
+
+    color: white;
+}
+
+hr {
+    background-color: black;
+}
+
+.header {
+
+    background-color: orange;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-bar {
+    height: 500px;
+    background-image: url('./Components/SearchBar/jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg');
+    background-size: cover;
+
+    background-position: center;
+
+}
